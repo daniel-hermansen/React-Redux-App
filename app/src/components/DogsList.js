@@ -2,19 +2,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getData } from "../actions";
-import Dog from "./dogs";
+import Dogs from "./dogs";
 
 const DogsList = props => {
     return (
         <div>
-            <button onClick={() => props.getData()}>
-                {props.isLoading ? "error" : "Get Doggies"}
+            <button className = "dog-button" onClick={() => props.getData()}>
+                {props.isLoading ? "Loading" : "Get Doggos"}
             </button>
             <div className= "dogs">
                 {props.stuff 
                 && 
                 props.stuff.map((item, index) => 
-                    <Dog key={index} stuff={item}/>
+                    <Dogs key={index} stuff={item}/>
                 )}
             </div>
         </div>
