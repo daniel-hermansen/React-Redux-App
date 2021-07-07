@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(251, 252, 228);
+}
+.App {
+  text-align: center;
+}
+
+.dog-button {
+  color: dodgerblue;
+  background-color: rgb(251, 252, 186);
+  border: solid 2px dodgerblue;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  width: 14%;
+  margin-bottom: 1.5%;
+}
+
+.dog-button:hover {
+  cursor: pointer;
+}
